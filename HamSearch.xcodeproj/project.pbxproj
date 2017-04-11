@@ -14,6 +14,8 @@
 		4DE9DA761E9C0AB40002655C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE9DA741E9C0AB40002655C /* LaunchScreen.storyboard */; };
 		4DE9DA811E9C0AB40002655C /* HamSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE9DA801E9C0AB40002655C /* HamSearchTests.swift */; };
 		4DE9DA8C1E9C0AB40002655C /* HamSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE9DA8B1E9C0AB40002655C /* HamSearchUITests.swift */; };
+		4DE9DA9A1E9C0B020002655C /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE9DA991E9C0B020002655C /* Parser.swift */; };
+		4DE9DA9E1E9C29FE0002655C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE9DA9D1E9C29FE0002655C /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		4DE9DA871E9C0AB40002655C /* HamSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HamSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE9DA8B1E9C0AB40002655C /* HamSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamSearchUITests.swift; sourceTree = "<group>"; };
 		4DE9DA8D1E9C0AB40002655C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DE9DA991E9C0B020002655C /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		4DE9DA9D1E9C29FE0002655C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				4DE9DA6B1E9C0AB40002655C /* AppDelegate.swift */,
 				4DE9DA6D1E9C0AB40002655C /* ViewController.swift */,
+				4DE9DA9D1E9C29FE0002655C /* LoginViewController.swift */,
+				4DE9DA991E9C0B020002655C /* Parser.swift */,
 				4DE9DA6F1E9C0AB40002655C /* Main.storyboard */,
 				4DE9DA721E9C0AB40002655C /* Assets.xcassets */,
 				4DE9DA741E9C0AB40002655C /* LaunchScreen.storyboard */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DE9DA9E1E9C29FE0002655C /* LoginViewController.swift in Sources */,
 				4DE9DA6E1E9C0AB40002655C /* ViewController.swift in Sources */,
 				4DE9DA6C1E9C0AB40002655C /* AppDelegate.swift in Sources */,
+				4DE9DA9A1E9C0B020002655C /* Parser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
