@@ -5,8 +5,8 @@
 //  Created by Jake Estepp on 4/10/17.
 //  Copyright © 2017 Jake Estepp. All rights reserved.
 //
-
 import Foundation
+
 var key = NSMutableString()
 var parser = XMLParser()
 var posts = NSMutableArray()
@@ -35,23 +35,20 @@ var timeZone = NSMutableString()
 var gmtOffset = NSMutableString()
 var login = NSMutableString()
 
-func beginParsing(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]){
-    posts = []
-    let parser = XMLParser(contentsOf:(URL(string:"http://xmldata.qrz.com/xml/current/?username=kd7vea;password=kilodelta7"))!)!
-    parser.parse()
-
-}
-
-func checkCredentials(didStartElement elementName: String){
-    element = elementName
-    if (elementName as NSString).isEqual(to: "Session")
-    {
-        if (elementName as NSString).isEqual(to: "Key"){
-            login = "success"
-        }else if (elementName as NSString).isEqual(to: "Error"){
-            login = "failed"
-        }
-        
+    func beginParsing(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]){
+        posts = []
+        let parser = XMLParser(contentsOf:(URL(string:"http://xmldata.qrz.com/xml/current/?username=kd7vea;password=kilodelta7"))!)!
+        parser.parse()
     }
-    
-}
+
+    func checkCredentials(didStartElement elementName: String){
+        element = elementName
+        if (elementName as NSString).isEqual(to: "Session")
+            {
+            if (elementName as NSString).isEqual(to: "Key"){
+                login = "success"
+            }else if (elementName as NSString).isEqual(to: "Error"){
+                login = "failed"
+            }
+        }
+    }

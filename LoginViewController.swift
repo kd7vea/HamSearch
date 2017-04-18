@@ -8,11 +8,13 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
-    
+class LoginViewController: UIViewController, XMLParserDelegate {
+   
     var user = String()
     var password = String()
     var key = NSMutableString()
+    var parser = XMLParser()
+    var element = String()
 
     @IBOutlet weak var warningLabel: UILabel!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -23,11 +25,56 @@ class LoginViewController: UIViewController {
     @IBAction func SaveButtonTapped(_ sender: UIButton) {
         user = userNameTextField.text!
         password = passwordTextField.text!
+        NSLog(user);
+        NSLog(password);
         if(user == "" || password == ""){
-            warningLabel.text = "Enter Callsign and Password"
+            warningLabel.text = "Enter Callsign and Password" // if user or password are blank, error message is posted
         }else{
-            warningLabel.text = ""
-            checkCredentials(didStartElement: <#String#>)
+            self.beginParsing()  //if the user, and password text boxes are not blank, the parser is called
+            userNameTextField.resignFirstResponder()
+            passwordTextField.resignFirstResponder()
+        }
+    }
+//XML parsing methods beginParsing, parser()
+    func beginParsing()
+    {
+        posts = []
+        parser = XMLParser(contentsOf:(URL(string:"http://xmldata.qrz.com/xml/current/?username=\(user);password=\(password)"))!)!
+        parser.delegate = self
+        parser.parse()
+    }
+    
+    //XMLParser Methods
+   
+    func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String])
+    {
+       element = elementName
+        if (elementName as NSString).isEqual(to: "Session")
+        {
+            elements = NSMutableDictionary()
+            elements = [:]
+            key = NSMutableString()
+            key = ""
+        }
+    }
+ 
+    func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?)
+    {
+        if (elementName as NSString).isEqual(to: "Session") {
+            if !key.isEqual(nil) {
+                elements.setObject(key, forKey: "Key" as NSCopying)
+            }
+            
+            posts.add(elements)
+        }
+    }
+    
+    func parser(_ parser: XMLParser, foundCharacters string: String)
+    {
+        if element.isEqual("Key") {
+        warningLabel.text = "Credentials Authenticated"
+        } else if element.isEqual("Error"){
+            warningLabel.text = "User name or Password incorrect"
         }
     }
     
@@ -35,19 +82,21 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
+    }
+
 
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        var DestViewController : SearchTableViewController = segue.destination as! SearchTableViewController
+        
+        DestViewController.user = userNameTextField.text!
+        DestViewController.password = passwordTextField.text!
     }
 
 }

@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D465AA31EA3DE27003D6982 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D465AA21EA3DE27003D6982 /* SearchTableViewController.swift */; };
+		4D465AA71EA3E480003D6982 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D465AA61EA3E480003D6982 /* LoginModel.swift */; };
+		4D465AA91EA3FBDD003D6982 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D465AA81EA3FBDD003D6982 /* LoginController.swift */; };
+		4D465AAC1EA41F26003D6982 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D465AAA1EA41F26003D6982 /* SearchTableViewCell.swift */; };
+		4D465AAD1EA41F26003D6982 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D465AAB1EA41F26003D6982 /* SearchTableViewCell.xib */; };
 		4DE9DA6C1E9C0AB40002655C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE9DA6B1E9C0AB40002655C /* AppDelegate.swift */; };
-		4DE9DA6E1E9C0AB40002655C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE9DA6D1E9C0AB40002655C /* ViewController.swift */; };
 		4DE9DA711E9C0AB40002655C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE9DA6F1E9C0AB40002655C /* Main.storyboard */; };
 		4DE9DA731E9C0AB40002655C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DE9DA721E9C0AB40002655C /* Assets.xcassets */; };
 		4DE9DA761E9C0AB40002655C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE9DA741E9C0AB40002655C /* LaunchScreen.storyboard */; };
 		4DE9DA811E9C0AB40002655C /* HamSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE9DA801E9C0AB40002655C /* HamSearchTests.swift */; };
 		4DE9DA8C1E9C0AB40002655C /* HamSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE9DA8B1E9C0AB40002655C /* HamSearchUITests.swift */; };
-		4DE9DA9A1E9C0B020002655C /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE9DA991E9C0B020002655C /* Parser.swift */; };
+		4DE9DA9A1E9C0B020002655C /* searchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE9DA991E9C0B020002655C /* searchController.swift */; };
 		4DE9DA9E1E9C29FE0002655C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE9DA9D1E9C29FE0002655C /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,9 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D465AA21EA3DE27003D6982 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchTableViewController.swift; path = ../SearchTableViewController.swift; sourceTree = "<group>"; };
+		4D465AA61EA3E480003D6982 /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		4D465AA81EA3FBDD003D6982 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		4D465AAA1EA41F26003D6982 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		4D465AAB1EA41F26003D6982 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 		4DE9DA681E9C0AB40002655C /* HamSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HamSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE9DA6B1E9C0AB40002655C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4DE9DA6D1E9C0AB40002655C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4DE9DA701E9C0AB40002655C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DE9DA721E9C0AB40002655C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DE9DA751E9C0AB40002655C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,7 +57,7 @@
 		4DE9DA871E9C0AB40002655C /* HamSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HamSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE9DA8B1E9C0AB40002655C /* HamSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamSearchUITests.swift; sourceTree = "<group>"; };
 		4DE9DA8D1E9C0AB40002655C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4DE9DA991E9C0B020002655C /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		4DE9DA991E9C0B020002655C /* searchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchController.swift; sourceTree = "<group>"; };
 		4DE9DA9D1E9C29FE0002655C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +86,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D465AA41EA3E241003D6982 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				4DE9DA9D1E9C29FE0002655C /* LoginViewController.swift */,
+				4D465AA81EA3FBDD003D6982 /* LoginController.swift */,
+				4D465AA61EA3E480003D6982 /* LoginModel.swift */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
+		4D465AA51EA3E2FE003D6982 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				4D465AA21EA3DE27003D6982 /* SearchTableViewController.swift */,
+				4D465AAA1EA41F26003D6982 /* SearchTableViewCell.swift */,
+				4D465AAB1EA41F26003D6982 /* SearchTableViewCell.xib */,
+				4DE9DA991E9C0B020002655C /* searchController.swift */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
 		4DE9DA5F1E9C0AB40002655C = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +130,9 @@
 		4DE9DA6A1E9C0AB40002655C /* HamSearch */ = {
 			isa = PBXGroup;
 			children = (
+				4D465AA41EA3E241003D6982 /* login */,
+				4D465AA51EA3E2FE003D6982 /* Search */,
 				4DE9DA6B1E9C0AB40002655C /* AppDelegate.swift */,
-				4DE9DA6D1E9C0AB40002655C /* ViewController.swift */,
-				4DE9DA9D1E9C29FE0002655C /* LoginViewController.swift */,
-				4DE9DA991E9C0B020002655C /* Parser.swift */,
 				4DE9DA6F1E9C0AB40002655C /* Main.storyboard */,
 				4DE9DA721E9C0AB40002655C /* Assets.xcassets */,
 				4DE9DA741E9C0AB40002655C /* LaunchScreen.storyboard */,
@@ -199,6 +227,7 @@
 				TargetAttributes = {
 					4DE9DA671E9C0AB40002655C = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 7FTDN4ALBK;
 						ProvisioningStyle = Automatic;
 					};
 					4DE9DA7B1E9C0AB40002655C = {
@@ -239,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DE9DA761E9C0AB40002655C /* LaunchScreen.storyboard in Resources */,
+				4D465AAD1EA41F26003D6982 /* SearchTableViewCell.xib in Resources */,
 				4DE9DA731E9C0AB40002655C /* Assets.xcassets in Resources */,
 				4DE9DA711E9C0AB40002655C /* Main.storyboard in Resources */,
 			);
@@ -265,10 +295,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D465AA71EA3E480003D6982 /* LoginModel.swift in Sources */,
+				4D465AA91EA3FBDD003D6982 /* LoginController.swift in Sources */,
 				4DE9DA9E1E9C29FE0002655C /* LoginViewController.swift in Sources */,
-				4DE9DA6E1E9C0AB40002655C /* ViewController.swift in Sources */,
 				4DE9DA6C1E9C0AB40002655C /* AppDelegate.swift in Sources */,
-				4DE9DA9A1E9C0B020002655C /* Parser.swift in Sources */,
+				4DE9DA9A1E9C0B020002655C /* searchController.swift in Sources */,
+				4D465AA31EA3DE27003D6982 /* SearchTableViewController.swift in Sources */,
+				4D465AAC1EA41F26003D6982 /* SearchTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7FTDN4ALBK;
 				INFOPLIST_FILE = HamSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakeEstepp.HamSearch;
@@ -434,6 +468,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7FTDN4ALBK;
 				INFOPLIST_FILE = HamSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakeEstepp.HamSearch;
@@ -515,6 +550,7 @@
 				4DE9DA921E9C0AB40002655C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DE9DA931E9C0AB40002655C /* Build configuration list for PBXNativeTarget "HamSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +559,7 @@
 				4DE9DA951E9C0AB40002655C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DE9DA961E9C0AB40002655C /* Build configuration list for PBXNativeTarget "HamSearchUITests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +568,7 @@
 				4DE9DA981E9C0AB40002655C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
