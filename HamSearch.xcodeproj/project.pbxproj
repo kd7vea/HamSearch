@@ -10,8 +10,6 @@
 		4D465AA31EA3DE27003D6982 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D465AA21EA3DE27003D6982 /* SearchTableViewController.swift */; };
 		4D465AA71EA3E480003D6982 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D465AA61EA3E480003D6982 /* LoginModel.swift */; };
 		4D465AA91EA3FBDD003D6982 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D465AA81EA3FBDD003D6982 /* LoginController.swift */; };
-		4D465AAC1EA41F26003D6982 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D465AAA1EA41F26003D6982 /* SearchTableViewCell.swift */; };
-		4D465AAD1EA41F26003D6982 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D465AAB1EA41F26003D6982 /* SearchTableViewCell.xib */; };
 		4DE9DA6C1E9C0AB40002655C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE9DA6B1E9C0AB40002655C /* AppDelegate.swift */; };
 		4DE9DA711E9C0AB40002655C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE9DA6F1E9C0AB40002655C /* Main.storyboard */; };
 		4DE9DA731E9C0AB40002655C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DE9DA721E9C0AB40002655C /* Assets.xcassets */; };
@@ -43,8 +41,6 @@
 		4D465AA21EA3DE27003D6982 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchTableViewController.swift; path = ../SearchTableViewController.swift; sourceTree = "<group>"; };
 		4D465AA61EA3E480003D6982 /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		4D465AA81EA3FBDD003D6982 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		4D465AAA1EA41F26003D6982 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
-		4D465AAB1EA41F26003D6982 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 		4DE9DA681E9C0AB40002655C /* HamSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HamSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE9DA6B1E9C0AB40002655C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DE9DA701E9C0AB40002655C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -100,8 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				4D465AA21EA3DE27003D6982 /* SearchTableViewController.swift */,
-				4D465AAA1EA41F26003D6982 /* SearchTableViewCell.swift */,
-				4D465AAB1EA41F26003D6982 /* SearchTableViewCell.xib */,
 				4DE9DA991E9C0B020002655C /* searchController.swift */,
 			);
 			name = Search;
@@ -268,7 +262,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DE9DA761E9C0AB40002655C /* LaunchScreen.storyboard in Resources */,
-				4D465AAD1EA41F26003D6982 /* SearchTableViewCell.xib in Resources */,
 				4DE9DA731E9C0AB40002655C /* Assets.xcassets in Resources */,
 				4DE9DA711E9C0AB40002655C /* Main.storyboard in Resources */,
 			);
@@ -301,7 +294,6 @@
 				4DE9DA6C1E9C0AB40002655C /* AppDelegate.swift in Sources */,
 				4DE9DA9A1E9C0B020002655C /* searchController.swift in Sources */,
 				4D465AA31EA3DE27003D6982 /* SearchTableViewController.swift in Sources */,
-				4D465AAC1EA41F26003D6982 /* SearchTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

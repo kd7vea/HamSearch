@@ -8,13 +8,15 @@
 
 import UIKit
 
+var user = String()
+var password = String()
+
 class LoginViewController: UIViewController, XMLParserDelegate {
    
-    var user = String()
-    var password = String()
     var key = NSMutableString()
     var parser = XMLParser()
     var element = String()
+    static let sharedInstance = LoginViewController()
 
     @IBOutlet weak var warningLabel: UILabel!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -25,8 +27,12 @@ class LoginViewController: UIViewController, XMLParserDelegate {
     @IBAction func SaveButtonTapped(_ sender: UIButton) {
         user = userNameTextField.text!
         password = passwordTextField.text!
-        NSLog(user);
-        NSLog(password);
+        
+        UserDefaults.standard.set(user, forKey: user)
+        UserDefaults.standard.set(password, forKey: password)
+        userNameTextField.text = ""
+        passwordTextField.text = ""
+    
         if(user == "" || password == ""){
             warningLabel.text = "Enter Callsign and Password" // if user or password are blank, error message is posted
         }else{
@@ -90,13 +96,15 @@ class LoginViewController: UIViewController, XMLParserDelegate {
     }
 
 
-
+/*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        var DestViewController : SearchTableViewController = segue.destination as! SearchTableViewController
+        if warningLabel.text == "Credentials Authenticated"{
+        let DestViewController : SearchTableViewController = segue.destination as! SearchTableViewController
         
         DestViewController.user = userNameTextField.text!
         DestViewController.password = passwordTextField.text!
+        }
     }
+ */
 
 }
