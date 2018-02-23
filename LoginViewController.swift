@@ -28,8 +28,8 @@ class LoginViewController: UIViewController, XMLParserDelegate {
         user = userNameTextField.text!
         password = passwordTextField.text!
         
-        UserDefaults.standard.set(user, forKey: user)
-        UserDefaults.standard.set(password, forKey: password)
+        UserDefaults.standard.set(user, forKey: "user")
+        UserDefaults.standard.set(password, forKey: "password")
         userNameTextField.text = ""
         passwordTextField.text = ""
     
@@ -87,7 +87,7 @@ class LoginViewController: UIViewController, XMLParserDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
 
     override func didReceiveMemoryWarning() {

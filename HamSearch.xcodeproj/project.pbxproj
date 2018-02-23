@@ -10,13 +10,13 @@
 		4D465AA31EA3DE27003D6982 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D465AA21EA3DE27003D6982 /* SearchTableViewController.swift */; };
 		4D465AA71EA3E480003D6982 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D465AA61EA3E480003D6982 /* LoginModel.swift */; };
 		4D465AA91EA3FBDD003D6982 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D465AA81EA3FBDD003D6982 /* LoginController.swift */; };
+		4DA93BCF1EE6878C005EB1F1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA93BCE1EE6878C005EB1F1 /* MapViewController.swift */; };
 		4DE9DA6C1E9C0AB40002655C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE9DA6B1E9C0AB40002655C /* AppDelegate.swift */; };
 		4DE9DA711E9C0AB40002655C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE9DA6F1E9C0AB40002655C /* Main.storyboard */; };
 		4DE9DA731E9C0AB40002655C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DE9DA721E9C0AB40002655C /* Assets.xcassets */; };
 		4DE9DA761E9C0AB40002655C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE9DA741E9C0AB40002655C /* LaunchScreen.storyboard */; };
 		4DE9DA811E9C0AB40002655C /* HamSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE9DA801E9C0AB40002655C /* HamSearchTests.swift */; };
 		4DE9DA8C1E9C0AB40002655C /* HamSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE9DA8B1E9C0AB40002655C /* HamSearchUITests.swift */; };
-		4DE9DA9A1E9C0B020002655C /* searchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE9DA991E9C0B020002655C /* searchController.swift */; };
 		4DE9DA9E1E9C29FE0002655C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE9DA9D1E9C29FE0002655C /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +41,7 @@
 		4D465AA21EA3DE27003D6982 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchTableViewController.swift; path = ../SearchTableViewController.swift; sourceTree = "<group>"; };
 		4D465AA61EA3E480003D6982 /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		4D465AA81EA3FBDD003D6982 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		4DA93BCE1EE6878C005EB1F1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
 		4DE9DA681E9C0AB40002655C /* HamSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HamSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE9DA6B1E9C0AB40002655C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DE9DA701E9C0AB40002655C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,7 +54,6 @@
 		4DE9DA871E9C0AB40002655C /* HamSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HamSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE9DA8B1E9C0AB40002655C /* HamSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamSearchUITests.swift; sourceTree = "<group>"; };
 		4DE9DA8D1E9C0AB40002655C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4DE9DA991E9C0B020002655C /* searchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchController.swift; sourceTree = "<group>"; };
 		4DE9DA9D1E9C29FE0002655C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				4D465AA21EA3DE27003D6982 /* SearchTableViewController.swift */,
-				4DE9DA991E9C0B020002655C /* searchController.swift */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -127,6 +126,7 @@
 				4D465AA41EA3E241003D6982 /* login */,
 				4D465AA51EA3E2FE003D6982 /* Search */,
 				4DE9DA6B1E9C0AB40002655C /* AppDelegate.swift */,
+				4DA93BCE1EE6878C005EB1F1 /* MapViewController.swift */,
 				4DE9DA6F1E9C0AB40002655C /* Main.storyboard */,
 				4DE9DA721E9C0AB40002655C /* Assets.xcassets */,
 				4DE9DA741E9C0AB40002655C /* LaunchScreen.storyboard */,
@@ -292,8 +292,8 @@
 				4D465AA91EA3FBDD003D6982 /* LoginController.swift in Sources */,
 				4DE9DA9E1E9C29FE0002655C /* LoginViewController.swift in Sources */,
 				4DE9DA6C1E9C0AB40002655C /* AppDelegate.swift in Sources */,
-				4DE9DA9A1E9C0B020002655C /* searchController.swift in Sources */,
 				4D465AA31EA3DE27003D6982 /* SearchTableViewController.swift in Sources */,
+				4DA93BCF1EE6878C005EB1F1 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
